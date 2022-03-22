@@ -176,7 +176,7 @@ body {
 
 /* END ABOUT US*/
 
-/* START CALL TO ACTION */
+/* START SERVICES */
 
 .services--section {
   display: flex;
@@ -185,9 +185,10 @@ body {
   width: auto;
   height: 390px;
   background-color: hsl(0, 66%, 41%);
+  color: white;
 }
 
-/* END CALL TO ACTION SECTION */
+/* END SERVICES SECTION */
 
 /* START QUOTE SECTION */
 
