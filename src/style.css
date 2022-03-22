@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
 
 /* BASE STYLES */
 
@@ -10,28 +10,29 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #1f2937;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(215, 28%, 17%);
 }
 
 /* START NAV */
 
 .nav--top {
   width: auto;
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1f2937;
+  background-color: hsl(215, 28%, 17%);
 }
 
 .nav_logo {
   font-size: 1.5em;
   padding: 25px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-weight: bold;
   margin: 0px 450px 0px 20px;
   width: 190px;
@@ -54,7 +55,7 @@ body {
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: white;
+  color: hsl(0, 0%, 100%);
   margin: 5px;
   font-weight: bold;
   font-size: 0.9em;
@@ -62,7 +63,7 @@ body {
 }
 
 .nav_links a:hover {
-  color: rgb(173, 35, 35);
+  color: hsl(0, 66%, 41%);
 }
 
 /* END NAV */
@@ -72,7 +73,12 @@ body {
 .header--top {
   display: flex;
   justify-content: center;
-  background-color: #1f2937;
+  background-color: hsl(215, 28%, 17%);
+  background-image: url(/img/parabol-bg-still.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-section {
@@ -88,7 +94,7 @@ body {
   font-size: 4.2em;
   font-weight: bold;
   margin: 10px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   align-self: center;
 }
 
@@ -96,7 +102,7 @@ body {
   font-size: 1.3em;
   font-weight: 600;
   margin: 15px;
-  color: #e5e7eb;
+  color: hsl(220, 13%, 91%);
   align-self: center;
   width: 650px;
   text-align: center;
@@ -105,8 +111,8 @@ body {
 .hero_button {
   display: inline-block;
   cursor: pointer;
-  background-color: rgb(173, 35, 35);
-  color: white;
+  background-color: hsl(0, 66%, 41%);
+  color: hsl(0, 0%, 100%);
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -125,17 +131,17 @@ body {
 
 /* END HERO SECTION */
 
-/* START ABOUT SECTION */
+/* START ABOUT US SECTION */
 
-.nosotros--section {
+.aboutus--section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: rgb(173, 35, 35);
+  background-color: hsl(0, 0%, 100%);
 }
 
-.nosotros-img {
+.aboutus-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,30 +150,44 @@ body {
   margin: 35px;
 }
 
-.img_box {
-  background-color: cyan;
-  width: 150px;
-  height: 150px;
+.icon_box img {
+  /* background-color: hsl(180, 100%, 50%);*/
+  width: 110px;
+  height: 110px;
   border-radius: 10px;
   margin: 25px;
-  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.527);
+  /*box-shadow: 10px 15px 20px hsla(0, 0%, 0%, 0.527);*/
 }
 
-.nosotros_title {
+.aboutus_title {
   font-size: 1.3em;
-  color: white;
+  color: hsl(0, 0%, 0%);
 }
 
-.img_text {
+.icon_text {
   height: 150px;
   width: 250px;
   font-size: 1em;
+  font-weight: 600;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: hsl(0, 0%, 0%);
 }
 
-/* END ABOUT */
+/* END ABOUT US*/
+
+/* START CALL TO ACTION */
+
+.services--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 390px;
+  background-color: hsl(0, 66%, 41%);
+}
+
+/* END CALL TO ACTION SECTION */
 
 /* START QUOTE SECTION */
 
@@ -176,15 +196,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 390px;
-  background-color: #1f2937;
+  background-color: hsl(215, 28%, 17%);
 }
 
 .quote_text {
-  width: 550px;
+  width: 650px;
   height: auto;
   text-align: center;
   font-size: 1.2em;
-  color: white;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
 }
 
 .quote_autor {
@@ -194,19 +215,6 @@ body {
 
 /* END QUOTE SECTION */
 
-/* START CALL TO ACTION */
-
-.callto--section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: 390px;
-  background-color: rgb(173, 35, 35);
-}
-
-/* END CALL TO ACTION SECTION */
-
 /* START CONTACT SECTION */
 
 .contact--section {
@@ -215,86 +223,45 @@ body {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 100vh;
-  background-color: #1f2937;
+  height: /*450px*/ 100vh;
+  background-color: hsl(215, 28%, 17%);
+  background-image: url(/img/coders.jpg);
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact_title {
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 2.5em;
-  padding: 10px;
+  margin: 10px;
 }
 
-.contact-form {
-  width: 550px;
-  height: 350px;
-}
-
-.contact-form ul {
-  list-style-type: none;
-}
-
-.form-style-9 {
-	max-width: 550px;
-	background: #1f2937;
-	padding: 30px;
-	margin: 50px auto;
-	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
-	border-radius: 10px;
-	border: 1px solid #305A72;
-}
-
-.form-style-9 ul{
-	list-style: none;
-}
-
-.form-style-9 ul li{
-	display: block;
-	margin-bottom: 10px;
-	min-height: 35px;
-}
-
-.form-style-9 ul li .field-style{
-	padding: 8px;
-	outline: none;
-	border: 1px solid #B0CFE0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-  background-color: #1f293715;
+.contact_subtitle {
   color: white;
-
-}.form-style-9 ul li .field-style:focus{
-	box-shadow: 0 0 5px #B0CFE0;
-	border:1px solid #B0CFE0;
+  font-size: 1.5em;
+  margin: 10px;
 }
 
-.form-style-9 ul li .field-split{
-	width: 100%;
+.contact_button {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  /*  background-color: hsl(0, 66%, 41%);
+  background-color: hsl(0, 0%, 100%);*/
   border-radius: 5px;
-  font-size: 1em;
+  border-width: 2px;
+  border-color: wheat;
+  margin: 10px;
 }
 
-.form-style-9 ul li textarea{
-	width: 100%;
-	height: 120px;
-  border-radius: 5px;
-}
-
-.form-style-9 ul li input[type="button"], 
-.form-style-9 ul li input[type="submit"] {
-	background-color: #ad2323;
-	border: 1px solid rgb(173, 35, 35);
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
-	padding: 8px 18px;
-  border-radius: 5px;
-  font-size: 1em;
-}
-
-.form-style-9 ul li input[type="button"]:hover, 
-.form-style-9 ul li input[type="submit"]:hover {
-	background-color: hsl(0, 65%, 35%);
+.contact_wsp {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+  margin: 20px;
 }
 
 /* DETAILS SUBSECTION */
@@ -315,7 +282,7 @@ body {
   align-items: center;
   width: 220px;
   height: 100px;
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: 0.9em;
   text-align: center;
   margin: 15px;
@@ -323,7 +290,7 @@ body {
 
 .details-container a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 /* END CONTACT SECTION */
@@ -334,17 +301,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  color: white;
-  background-color: rgb(173, 35, 35);
+  height: 60px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(215, 28%, 17%);
 }
 
 .footer--section a {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
   transition-duration: 0.4s;
 }
 
 .footer--section a:hover {
-  color: #1f2937;
+  color: hsl(0, 66%, 41%);
 }
