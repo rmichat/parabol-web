@@ -21,8 +21,11 @@ body {
 /* START NAV */
 
 .nav--top {
-  width: auto;
+  width: 100%;
   height: 60px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +34,7 @@ body {
 
 .nav_logo {
   font-size: 1.5em;
-  padding: 25px;
+  padding: 25px 25px 20px 25px;
   color: hsl(0, 0%, 100%);
   font-weight: bold;
   margin: 0px 450px 0px 20px;
@@ -44,6 +47,7 @@ body {
   width: 625px;
   padding: 0px 10px;
   margin-right: 25px;
+  margin-left: 70px;
 }
 
 .nav_links li {
@@ -315,4 +319,21 @@ body {
 
 .footer--section a:hover {
   color: hsl(0, 66%, 41%);
+}
+
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  transition-duration: 0.4s;
+  /*border-radius: 25px;*/
+  /*background-color: white;*/
+  /*box-shadow: 5px 5px 15px 0px rgb(0 0 0);*/
+}
+
+.arrow:hover {
+  width: 68px;
+  height: 68px;
 }
