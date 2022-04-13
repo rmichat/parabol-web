@@ -78,7 +78,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: hsl(215, 28%, 17%);
-  background-image: url(/public/img/parabol-bg-still.png);
+  background-image: url(/img/parabol-bg-still.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -300,7 +300,7 @@ body {
   width: auto;
   height: /*450px*/ 100vh;
   background-color: hsl(215, 28%, 17%);
-  background-image: url(/public/img/coders.jpg);
+  background-image: url(/img/coders.jpg);
   /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
